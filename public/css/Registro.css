@@ -1,0 +1,257 @@
+/* Estilos generales */
+.page-container {
+    min-height: 100vh;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+}
+
+/* Encabezado del registro */
+.registration-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInDown 0.5s ease;
+}
+
+.registration-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite;
+}
+
+.registration-header h1 {
+    color: #2d3d5d;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Tarjeta de registro */
+.registration-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease;
+}
+
+/* Formulario */
+.registration-form {
+    padding: 1rem;
+}
+
+.form-section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-floating {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-control, .form-select {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.form-floating label {
+    padding: 1rem 0.75rem;
+}
+
+.form-floating label i {
+    margin-right: 0.5rem;
+    color: #6c757d;
+}
+
+.gender-group {
+    margin: 1rem 0;
+}
+
+.gender-group .btn-group {
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.btn-check + .btn {
+    flex: 1;
+    padding: 0.75rem;
+}
+
+.establishment-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.establishment-group .form-floating {
+    flex: 1;
+}
+
+.establishment-group button {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-upload {
+    margin-top: 1.5rem;
+}
+
+.upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.upload-area:hover {
+    border-color: #4e73df;
+}
+
+.upload-content {
+    color: #6c757d;
+}
+
+.upload-content i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.preview-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+}
+
+.form-buttons {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-container {
+        padding: 1rem;
+    }
+    
+    .registration-card {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+#imgF {
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+}
+
+#imgF img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.back {
+    margin-top: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+.back img {
+    max-width: 100%;
+    height: auto; 
+}
