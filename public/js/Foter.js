@@ -38,13 +38,6 @@ class FooterComponent {
                     </div>
                 </div>
 
-            
-
-                <div class="footer-section social">
-                    <div class="footer-logo-container">
-                        <img src="/img/logotuberculosis.png" alt="Logo Tuberculosis" class="footer-logo-tb">
-                    </div>
-                </div>
             </div>
 
             <div class="footer-bottom">

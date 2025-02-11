@@ -17,3 +17,8 @@ Route::get('/login', [\App\Http\Controllers\AuthController::class, 'index'])->na
 
 // Ruta para el Registro de Usuarios
 Route::get('/registro', [\App\Http\Controllers\UserController::class, 'registro'])->name('registro');
+
+// Ruta para la Documentación
+Route::get('/documentacion', function() {
+    return view('documentacion');
+})->name('documentacion');

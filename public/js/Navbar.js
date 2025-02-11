@@ -29,6 +29,9 @@ class MenuComponent {
                                 <a class="nav-link" href="/pacientes/registro">Registrar Pacientes</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/documentacion">Documentación</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="btn btn-primary" href="/login">Login</a>
                             </li>
                         </ul>
@@ -42,4 +45,3 @@ class MenuComponent {
 document.addEventListener('DOMContentLoaded', () => {
     new MenuComponent();
 });
-  

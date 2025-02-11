@@ -25,6 +25,48 @@ let patients = [
         phone: '555-5678',
         address: 'Avenida Central 456',
         photoUrl: '/img/default-avatar.png'
+    },
+    {
+        id: 3,
+        fullName: 'Juan Pérez',
+        ci: '1234567',
+        establishment: 'Hospital General San Juan de Dios',
+        phase: 'Primera Fase',
+        status: 'Activo',
+        birthDate: '1975-01-01',
+        gender: 'Masculino',
+        phone: '71234567',
+        address: 'Calle Los Pinos #123',
+        photoUrl: '/img/logoMedico.png',
+        endDate: '2025-06-15'
+    },
+    {
+        id: 4,
+        fullName: 'María García',
+        ci: '7654321',
+        establishment: 'Hospital de la Mujer',
+        phase: 'Segunda Fase',
+        status: 'Activo',
+        birthDate: '1988-01-01',
+        gender: 'Femenino',
+        phone: '72345678',
+        address: 'Av. Las Flores #456',
+        photoUrl: '/img/logoMedico.png',
+        endDate: '2025-05-20'
+    },
+    {
+        id: 5,
+        fullName: 'Carlos López',
+        ci: '9876543',
+        establishment: 'Hospital del Norte',
+        phase: 'Primera Fase',
+        status: 'En Observación',
+        birthDate: '1992-01-01',
+        gender: 'Masculino',
+        phone: '73456789',
+        address: 'Av. Principal #789',
+        photoUrl: '/img/logoMedico.png',
+        endDate: '2025-07-30'
     }
 ];
 
@@ -313,7 +355,7 @@ function getStatusClass(status) {
             return 'bg-success';
         case 'Inactivo':
             return 'bg-danger';
-        case 'En Espera':
+        case 'En Observación':
             return 'bg-warning';
         default:
             return 'bg-secondary';
