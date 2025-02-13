@@ -1,19 +1,27 @@
 <?php
 
-
 use Illuminate\Support\Facades\Route;
 
-// Ruta para el Home
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-// Ruta para Pacientes
-Route::get('/pacientes', [\App\Http\Controllers\PatientController::class, 'index'])->name('pacientes.index');
+Route::get('/login', function () {
+    return view('authentication.login');
+})->name('login');
 
-// Ruta para el Registro de Pacientes
-Route::get('/pacientes/registro', [\App\Http\Controllers\PatientController::class, 'registro'])->name('pacientes.registro');
+Route::get('/signup', function () {
+    return view('authentication.signup');
+})->name('signup');
 
-// Ruta para el Login
-Route::get('/login', [\App\Http\Controllers\AuthController::class, 'index'])->name('login');
+Route::get('/patients', function () {
+    return view('patients.lista');
+})->name('signup');
 
-// Ruta para el Registro de Usuarios
-Route::get('/registro', [\App\Http\Controllers\UserController::class, 'registro'])->name('registro');
+Route::get('/patients/registro', function () {
+    return view('patients.registrar_paciente');
+})->name('signup');
+
+Route::get('/documentation/', function () {
+    return view('documentation');
+})->name('signup');
